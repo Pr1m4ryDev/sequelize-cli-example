@@ -1,0 +1,38 @@
+{
+  "name": "sequelize-cli-example",
+  "version": "0.0.1",
+  "description": "A sample project using Sequelize ORM with Migrations",
+  "main": "app.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "unmigrate": "npx sequelize-cli db:migrate:undo",
+    "seed": "npx sequelize-cli db:seed:all",
+    "unseed": "npx sequelize-cli db:seed:undo:all",
+    "start": "node src/app.js"
+  },
+  "keywords": [
+    "sequelize",
+    "migrations",
+    "seeders",
+    "cli"
+  ],
+  "author": "PrimaryOmega",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1"
+  }
+}
